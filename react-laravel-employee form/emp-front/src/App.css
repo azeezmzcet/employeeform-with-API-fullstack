@@ -1,0 +1,78 @@
+/* Apply full background image */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('https://media.istockphoto.com/id/2161365273/photo/digitally-generated-star-field-on-deep-galaxy.webp?b=1&s=170667a&w=0&k=20&c=iu_L80FuT74dpC5-wmNwwDP-OD4kYsX0bSN_TQNnOiQ=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  width: 100vw; 
+  backdrop-filter: blur(10px);
+}
+
+
+#center {
+  width: 90%;
+  color:black;
+  max-width: 600px;
+  margin: 2% auto;
+  padding: 0 20px 30px 30px;
+  border: 3px solid rgba(0, 0, 0, 0.3); /* Semi-transparent border */
+  backdrop-filter: blur(8px); 
+  background: rgba(255, 255, 255, 0.3); 
+}
+
+
+.text {
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+
+#edit:hover {
+  background-color: rgb(78, 240, 78);
+}
+
+#delete:hover {
+  background-color: rgb(255, 67, 67);
+}
+
+/* Responsive design */
+@media (max-width: 750px) {
+  #center {
+      width: 95%;
+      padding: 0 15px 30px 15px; 
+      margin: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  #center {
+      width: 100%;
+      padding: 0 15px 30px 15px; 
+      margin: 0; 
+  }
+
+  .text {
+      font-size: 30px; 
+  }
+}
+
+@media (max-width: 450px) {
+  #center {
+      width: 100%;
+      padding: 0 10px 20px 10px; 
+      margin: 0;
+  }
+
+  .text {
+      font-size: 14px; 
+  }
+}
